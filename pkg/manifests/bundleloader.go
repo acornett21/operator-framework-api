@@ -197,10 +197,10 @@ func loadBundle(csvName string, dir string) (*Bundle, error) {
 			continue
 		}
 
-		if strings.HasPrefix(f.Name(), ".") {
+		/*if strings.HasPrefix(f.Name(), ".") {
 			errs = append(errs, fmt.Errorf("bundle manifests dir has hidden file: %s", path))
 			continue
-		}
+		}*/
 
 		fileReader, err := os.Open(path)
 		if err != nil {
